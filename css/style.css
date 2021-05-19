@@ -3,12 +3,71 @@
     font-family: 'OpenSans';
     src: url('/fonts/OpenSans');
     src: url('/fonts/OpenSans-Bold.eot') format('eot'),
-        url('/fonts/OpenSans-Italic.woff') format('woff'),
+        url('/fonts/OpenSans-Regular.ttf') format('woff'),
         url('/fonts/OpenSans-Regular.ttf') format('truetype'),
         url('/fonts/OpenSans-Bold.woff2') format('woff2');
 
     font-weight: normal;
-
     font-style: normal;
 
+}
+
+/* BASE STYLES */
+
+
+body {
+    font-family: 'OpenSans';
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h6 {
+    display: inline;
+}
+
+/* HEADER STYLES */
+
+.header-content {
+    margin: 25px 0 0 0;
+    font-size: 14px;
+    display: flex;
+
+}
+
+.logo,
+.menu-center li,
+.menu-right li {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-center :first-child {
+    color: #313D64;
+}
+
+.menu-right :last-child {
+    color: #313D64;
 }
