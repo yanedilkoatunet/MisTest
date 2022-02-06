@@ -27,47 +27,416 @@ body {
     margin-right: auto;
 }
 
-.container {
-    max-width: 880px;
-    margin-left: auto;
-    margin-right: auto;
+h1 {
+    color: white;
+    font-size: 54px;
+    font-weight: bold;
+    margin: 70px 40px 20px 0;
+    display: inline-block;
+}
+
+h2 {
+    padding: 10px 0 10px 0;
+    font-size: 50px;
+    color: #313D64;
+    font-weight: bold;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+    font-weight: 400;
+    margin: 30px 0 80px 0;
+}
+
+h5 {
+    color: #F56C03;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+h6 {
+    margin: 17px 0 0 0;
+    display: inline-block;
+    font-weight: bolder;
 
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+
 }
 
 a {
     text-decoration: none;
 }
 
-h6 {
-    display: inline;
+
+
+form {
+    z-index: 1;
+    position: relative;
+    box-sizing: border-box;
+    width: 442px;
+    background-image: url(/img/formbg.jpg);
+    padding: 20px 30px 20px 20px;
+    border-radius: 4px 4px 0px 0px;
+    margin: 50px 0 0 50px;
 }
+
+input {
+    padding-left: 100px;
+}
+
+button {
+    width: 315px;
+    height: 62px;
+    background-color: #F56C03;
+    border: 1px solid #B74F00;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #CD5900;
+}
+
+button:active {
+    background: #B74F00;
+}
+
+b {
+    font-style: normal;
+    margin: 0 150px 0 0;
+}
+
 
 /* HEADER STYLES */
 
 .header-content {
-    margin: 25px 0 0 0;
+    margin: 10px 0 10px 0;
     font-size: 14px;
     display: flex;
 
 }
 
+.logo {
+    width: 106px;
+    height: 64px;
+}
+
 .logo,
 .menu-center li,
 .menu-right li {
+    justify-content: space-between;
+}
+
+.menu-center {
+    margin: 10px 150px 0 150px;
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+
+}
+
+.menu-center li {
+    margin: 0 0 10px 0;
+}
+
+.menu-center li strong:first-child {
+    font-size: 14px;
+    color: #313D64;
+}
+
+.rate {
+    padding: 0 0 3px 10px;
+}
+
+.menu-right li:first-child {
+    color: #666666;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.number {
+    margin: 20px 0 10px 0;
+    color: #313D64;
+    font-size: 27px;
+    font-weight: bold;
+
+}
+
+/* MAIN STYLES */
+
+
+.main-content {
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.main-wrapper {
+    display: flex;
+}
+
+.main-left,
+.main-right {
     flex-direction: row;
-    justify-content: space-around;
 }
 
-.menu-center :first-child {
-    color: #313D64;
+.main-right {
+    position: relative;
 }
 
-.menu-right :last-child {
-    color: #313D64;
+.reviews {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.rev1 {
+    margin: 0 30px 0 0;
+    padding: 0;
+}
+
+.rev1 li span {
+    font-size: 14px;
+    color: white;
+    line-height: 19px;
+}
+
+.rev2,
+.rev3,
+.rev4 {
+    margin: 0 40px 0 40px;
+    padding: 0;
+    text-align: center;
+}
+
+.rev4 {
+    margin: 0 0 20px 0;
+}
+
+.vl {
+    border-left: 1px solid white;
+    height: 63px;
+    opacity: .1;
+}
+
+.orangerate {
+    width: 70px;
+    height: 10px;
+}
+
+.lrate {
+    font-size: 10px;
+    color: white;
+}
+
+
+.infoinput {
+    font-size: 14px;
+    width: 315px;
+
+}
+
+.form li button strong {
+    color: white;
+}
+
+.inputfn {
+    position: relative;
+    margin: 10px 0 10px 0;
+}
+
+.inputfn-placeholder {
+    top: 50%;
+    left: 20px;
+    font-size: 12px;
+    position: absolute;
+    color: #666666;
+    font-weight: bold;
+    transform: translate(0, -50%);
+}
+
+.element2 {
+    width: 1px;
+    border-left: 1px solid#E0E0E0;
+    height: 10px;
+    opacity: .1;
+    position: absolute;
+}
+
+.checkmark {
+    color: #666666;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 0 0 15px 0;
+    box-sizing: border-box;
+}
+
+.inputdate select,
+input {
+    height: 40px;
+    margin: 0 6px 0 0;
+    width: 96px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    display: inline;
+    color: #999899;
+    font-size: 14px;
+}
+
+.date {
+    width: 77px;
+}
+
+
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+}
+
+.element {
+    z-index: 1;
+    color: white;
+    width: 85px;
+    height: 82px;
+    margin-top: -25px;
+    background: #354784;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.element:before,
+.element:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85px;
+    height: 82px;
+    background: inherit;
+    border-radius: 8px;
+}
+
+.element:before {
+    transform: rotate(30deg);
+}
+
+.element:after {
+    transform: rotate(60deg);
+}
+
+
+.main-bottom {
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 30px 10px 25px 10px;
+    background: #F5F5F7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.custom-checkbox{
+    margin: 10px 60px 10px 0;
+}
+.check{
+    margin: 0 7px 0 0;
+}
+.secondpage-top {
+    margin: 120px 0 100px 0;
+    display: inline-flex;
+    flex-flow: row nowrap;
+}
+
+.switchbox {
+    display: inline;
+    margin: 0 20px 0 0;
+}
+
+.reviews1 {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 351px;
+    height: 272px;
+    font-size: 14px;
+    font-style: italic;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px 20px 20px 20px;
+    margin: 0 10px 0 30px;
+
+}
+
+.reviews1 p {
+    margin: 10px 0 40px 0;
+}
+
+.logorow {
+    display: inline-flex;
+    flex-flow: row nowrap;
+}
+
+.logobox {
+    margin: 0 10px 100px 10px;
+    position: relative;
+    width: 255px;
+    height: 118px;
+    border-radius: 4px;
+    background: rgba(49, 61, 100, 0.01);
+    border: 1px solid #EAECEF;
+
+}
+
+.logobox:first-child {
+    margin-left: 0;
+}
+
+.logobox:last-child {
+    margin-left: 10px;
+}
+
+.logoimg {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.line {
+    border-bottom: 1px solid #EFEFEF;
+    width: 1089px;
+    margin: 0 0 20px 0;
+}
+
+.footer-content {
+    display: inline-flex;
+    flex-flow: row nowrap;
+
+
+}
+
+.reviews-row {
+    margin: -10px 120px 0 140px;
+    align-self: baseline;
+}
+
+.reviews-row img {
+    padding: 0 20px 0 20px;
 }
